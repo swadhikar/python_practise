@@ -22,12 +22,13 @@ jobs:
       - name: Install python dependencies
         run: |
           python3 -m pip install -r requirements.txt
-          # cd my_web_api 
-          # nohup python3 -m uvicorn main:app --reload &
+          echo "Launching webserver in the background ..."
+          cd my_web_api 
+          nohup python3 -m uvicorn main:app --reload &
+          cd -
 
       - name: Run Tests
         run: |
           echo "Running test cases..."
           python3 -m pytest
-          # cd .. && python3 -m pytest
-          # cd my_web_api && python3 test_my_web_api.py
+          
