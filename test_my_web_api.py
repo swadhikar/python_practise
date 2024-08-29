@@ -1,5 +1,5 @@
 import requests
-import json 
+import json
 
 
 def test_read_root():
@@ -15,8 +15,9 @@ def test_read_item(endpoint: str):
 
 
 if __name__ == '__main__':
-    return_dict = test_read_root()
-    print("Get full response:\n", json.dumps(return_dict, indent=4))
-    return_dict = test_read_item(r'items/user')
-    print("Get items/user response:\n", json.dumps(return_dict, indent=4))
+    # return_dict = test_read_root()
+    # print("Get full response:\n", json.dumps(return_dict, indent=4))
+    # return_dict = test_read_item(r'items/user')
+    # print("Get items/user response:\n", json.dumps(return_dict, indent=4))
+    pass
 
