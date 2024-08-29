@@ -17,7 +17,7 @@ def test_read_root():
 def test_read_item():
     url: str = f'http://localhost:8000/items/user'
     response = requests.get(url)
-    return json.loads(response.content.decode()) == {
+    assert json.loads(response.content.decode()) == {
                                                         "name": "swadhikar",
                                                         "company": "TEL",
                                                         "age": 34
