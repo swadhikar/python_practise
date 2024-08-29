@@ -72,3 +72,4 @@ def test_process_user_data_invalid_username():
     invalid_user = {"age": 34}
     with pytest.raises(InvalidUserDataException, match="User name is required"):
         calculator.process_user_data(invalid_user)
+
