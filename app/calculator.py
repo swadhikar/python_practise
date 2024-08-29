@@ -7,8 +7,8 @@ def add(num_1: int, num_2: int) -> int:
     return num_1 + num_2 
 
 
-# def square_root(num: float) -> float:
-#     assert math.sqrt(num)
+def square_root(num: float) -> float:
+    return math.sqrt(num)
 
 def multiply_numbers(args: list[int]) -> int:
     product = 1

@@ -6,9 +6,8 @@ import pytest
 def test_addition():
     assert calculator.add(1, 2) == 3
 
-@pytest.mark.skip(reason="not implemented error")
 def test_square_root():
-    return calculator.square_root(9)
+    assert int(calculator.square_root(9)) == 3 
 
 @pytest.fixture
 def sample_list():
